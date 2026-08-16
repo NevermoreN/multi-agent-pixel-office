@@ -1,0 +1,120 @@
+{
+  "name": "multi-agent-pixel-office",
+  "displayName": "Multi-Agent Pixel Office",
+  "description": "Visualize GitHub Copilot and Claude Code sessions and subagents in a pixel-art office, with code-server support.",
+  "version": "1.0.0",
+  "publisher": "nevermore-n",
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#171827",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "AI",
+    "Visualization"
+  ],
+  "keywords": [
+    "agents",
+    "subagents",
+    "pixel-art",
+    "visualization",
+    "code-server",
+    "github-copilot",
+    "claude-code"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "multi-agent-pixel-office",
+          "title": "Multi-Agent Pixel Office",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "multi-agent-pixel-office": [
+        {
+          "type": "webview",
+          "id": "multiAgentPixelOffice.officeView",
+          "name": "Pixel Office"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "multiAgentPixelOffice.showPanel",
+        "title": "Show Pixel Office",
+        "category": "Multi-Agent Pixel Office"
+      },
+      {
+        "command": "multiAgentPixelOffice.installHooks",
+        "title": "Install GitHub Copilot and Claude Code Hooks",
+        "category": "Multi-Agent Pixel Office"
+      },
+      {
+        "command": "multiAgentPixelOffice.showHooksConfig",
+        "title": "Show Hook Locations",
+        "category": "Multi-Agent Pixel Office"
+      }
+    ],
+    "configuration": {
+      "title": "Multi-Agent Pixel Office",
+      "properties": {
+        "multiAgentPixelOffice.port": {
+          "type": "number",
+          "default": 7933,
+          "minimum": 1,
+          "maximum": 65535,
+          "description": "Loopback port used by the local agent-state broker."
+        },
+        "multiAgentPixelOffice.pythonPath": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "description": "Python 3 executable used to run the local broker and install hooks. Empty uses PYTHON or python3."
+        },
+        "multiAgentPixelOffice.autoShowPanel": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically show the pixel office after startup."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NevermoreN/multi-agent-pixel-office"
+  },
+  "bugs": {
+    "url": "https://github.com/NevermoreN/multi-agent-pixel-office/issues"
+  },
+  "homepage": "https://github.com/NevermoreN/multi-agent-pixel-office#readme",
+  "scripts": {
+    "build": "node esbuild.js",
+    "build:webview": "cd webview-ui && npm run build",
+    "check": "tsc --noEmit",
+    "dev": "node esbuild.js --watch",
+    "vscode:prepublish": "npm run build:webview && npm run build",
+    "package": "npx @vscode/vsce package --no-dependencies --out multi-agent-pixel-office-1.0.0.vsix",
+    "publish": "npx @vscode/vsce publish --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.94.0",
+    "@vscode/vsce": "^3.0.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.7.0"
+  }
+}
