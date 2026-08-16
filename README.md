@@ -4,6 +4,18 @@ Visualize concurrent GitHub Copilot and Claude Code sessions, including subagent
 
 ![Pixel office preview](.github/preview.gif)
 
+## Upstream project
+
+This project is an independently maintained modified derivative of:
+
+- **Project:** Copilot Pixel Agents
+- **Upstream repository:** https://github.com/khalango02/copilot-pixel-agents
+- **Original copyright holder:** Clesley Oliveira
+- **Original Marketplace extension ID:** `cl-oliveira.copilot-pixel-agents`
+- **License:** MIT
+
+The original MIT copyright and permission notice are retained in [LICENSE](LICENSE). This project uses a separate name, extension ID, publisher, command namespace, settings namespace, storage directory, and Marketplace listing. Major modifications include concurrent session discovery, main-agent/subagent relationships, GitHub Copilot and Claude Code providers, a shared authenticated broker, code-server support, and a provider-neutral activity panel.
+
 ## Features
 
 - Shows multiple GitHub Copilot and Claude Code sessions at the same time.
@@ -73,6 +85,6 @@ Press `F5` to launch an Extension Development Host. Build a VSIX with `npm run p
 
 This is an independent, unofficial project and is not affiliated with or endorsed by Microsoft, GitHub, Anthropic, or the upstream authors.
 
-The project is a modified derivative of **Copilot Pixel Agents**, originally copyright © 2026 Clesley Oliveira and distributed under the MIT License. Pixel-art assets are derived from `pablodelucca/pixel-agents` under the MIT License; character sprites are based on the “JIK-A-4, Metro City” tileset. See [LICENSE](LICENSE) for the retained notices.
+The upstream source is **Copilot Pixel Agents** by Clesley Oliveira: https://github.com/khalango02/copilot-pixel-agents. It is distributed under the MIT License. Pixel-art assets are derived from `pablodelucca/pixel-agents` under the MIT License; character sprites are based on the “JIK-A-4, Metro City” tileset. See [LICENSE](LICENSE) for the retained notices.
 
 GitHub, GitHub Copilot, Microsoft, VS Code, Claude, Claude Code, and Anthropic are trademarks of their respective owners.

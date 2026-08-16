@@ -23,5 +23,15 @@ SOFTWARE.
 
 ---
 
+Upstream project notice:
+
+This software is an independently maintained modified derivative of
+"Copilot Pixel Agents":
+https://github.com/khalango02/copilot-pixel-agents
+
+The original copyright notice names Clesley Oliveira. The original Visual
+Studio Marketplace extension identifier is cl-oliveira.copilot-pixel-agents.
+The original MIT copyright and permission notice are retained above.
+
 This project uses pixel art assets from pablodelucca/pixel-agents (MIT License).
 Character sprites are based on "JIK-A-4, Metro City" tileset.

@@ -27,6 +27,6 @@
 
 ### Attribution
 
-- Retains the MIT License and copyright notice from Copilot Pixel Agents by Clesley Oliveira.
+- Identifies the upstream project as Copilot Pixel Agents by Clesley Oliveira: https://github.com/khalango02/copilot-pixel-agents.
+- Retains the upstream MIT License, copyright notice, and original Marketplace extension ID `cl-oliveira.copilot-pixel-agents`.
 - Retains attribution for pixel-art assets derived from `pablodelucca/pixel-agents` and the “JIK-A-4, Metro City” tileset.
-- `Install Hooks` command generates hook scripts and config
