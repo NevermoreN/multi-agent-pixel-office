@@ -3,7 +3,7 @@
   "displayName": "Multi-Agent Pixel Office",
   "description": "Visualize GitHub Copilot and Claude Code sessions and subagents in a pixel-art office, with code-server support.",
   "version": "1.0.0",
-  "publisher": "nevermore-n",
+  "publisher": "Ansell",
   "license": "MIT",
   "icon": "media/icon.png",
   "galleryBanner": {
